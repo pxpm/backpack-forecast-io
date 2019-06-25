@@ -1,12 +1,12 @@
 {
-    "name": "pxpm/backpack-forecast-io",
+    "name": "pxpm/backpack-fullcalendar",
     "type": "package",
-    "description": "Add Forecast-IO support to your backpack app.",
+    "description": "Add full calendar to your webapp.",
     "keywords": [
         "pxpm",
         "ifthenpay"
     ],
-    "homepage": "https://github.com/pxpm/backpack-forecast-io",
+    "homepage": "https://github.com/pxpm/backpack-fullcalendar",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "backpack/crud": "^3.5"
+        "backpack/crud": "^3.6"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pxpm\\ForecastIO\\": "src"
+            "Pxpm\\BackpackFullCalendar\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pxpm\\ForecastIO\\": "tests"
+            "Pxpm\\BackpackFullCalendar\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
         },
         "laravel": {
             "providers": [
-                "Pxpm\\ForecastIO\\ForecastIOServiceProvider"
+                "Pxpm\\BackpackFullCalendar\\BackpackFullCalendarServiceProvider"
             ]
         }
     },
